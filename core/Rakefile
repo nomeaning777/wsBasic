@@ -1,0 +1,11 @@
+# -*- coding:utf-8 -*-
+require 'rake/clean'
+
+CLEAN.include ['Parser.output']
+
+task :default => "Parser.rb"
+
+file "Parser.rb" => ['Parser.y'] do |f|
+  sh "racc -v #{f.prerequisites[0]} -o #{f.name}"
+end
+

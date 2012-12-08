@@ -1,0 +1,5 @@
+*.swp
+doc/*
+dust/*
+Parser.tab.rb
+Parser.output

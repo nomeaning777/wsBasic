@@ -1,0 +1,8 @@
+= wsBASIC
+Quick Basic風の言語からWhiteSpaceへのトランスレーター
+== 必要なもの
+- Ruby 1.9以上
+
+== 使い方
+ ./bin/wsbas ./example/fizzbuzz.cbas
+
